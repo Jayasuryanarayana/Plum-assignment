@@ -1,10 +1,10 @@
-#AI-Powered Medical Report Simplifier
+## AI-Powered Medical Report Simplifier
 
 This backend service provides a REST API to simplify medical lab reports. It accepts either raw text or scanned images of a report and returns a structured JSON object containing normalized test results and patient-friendly explanations.
 
 This project is designed to be robust, scalable, and safe, incorporating image pre-processing for improved OCR accuracy, advanced validation guardrails, and a service-oriented architecture for maintainability.
 
-Table of Contents
+# Table of Contents
 1.Architecture
 2.Features
 3.Setup and Installation
@@ -15,7 +15,7 @@ Table of Contents
      Example 2: Image Input
 Project Enhancements
 
-Architecture:-
+# Architecture:-
 This project follows a service-oriented architecture to ensure a clean separation of concerns, making the codebase modular, testable, and easy to maintain.
 1)app.py: The main entry point. It contains only the Flask API routing and request/response handling logic. It acts as a controller that orchestrates the flow of data between the services.
 
@@ -24,19 +24,19 @@ This project follows a service-oriented architecture to ensure a clean separatio
 2-b)normalization_service.py: Responsible for parsing raw text, identifying medical tests using fuzzy string matching (rapidfuzz), and normalizing them into a structured format. It includes physiological sanity checks to discard impossible values that may result from OCR errors.
 2-c)summary_service.py: Generates the final patient-friendly summary and explanations. It includes a critical hallucination guardrail to ensure explanations are only generated for tests that were actually present in the input.
 
-Features
+# Features
 Dual Input: Accepts both raw text and image files.
 Robust OCR: Utilizes image pre-processing (grayscale, binarization) to improve the accuracy of text extraction from scans.
 Fuzzy Matching: Accurately identifies medical tests even with common spelling mistakes or OCR errors.
 Advanced Guardrails: Implements safety checks to prevent physiologically impossible values and hallucinated results.
 Consistent API Schema: Provides predictable and reliable JSON responses for both success and error states.
 
-Setup and Installation
+## Setup and Installation
 Prerequisites
 1)Python 3.8+
 2)Tesseract OCR Engine
 
-Step-by-Step Guide
+# Step-by-Step Guide
 1.Clone the Repository:
 git clone https://github.com/Jayasuryanarayana/Plum-assignment
 cd Plum-assignment
