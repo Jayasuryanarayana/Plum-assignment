@@ -31,7 +31,7 @@ Fuzzy Matching: Accurately identifies medical tests even with common spelling mi
 Advanced Guardrails: Implements safety checks to prevent physiologically impossible values and hallucinated results.
 Consistent API Schema: Provides predictable and reliable JSON responses for both success and error states.
 
-## Setup and Installation
+# Setup and Installation
 Prerequisites
 1)Python 3.8+
 2)Tesseract OCR Engine
