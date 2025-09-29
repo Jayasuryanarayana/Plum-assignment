@@ -111,3 +111,7 @@ Error Response (400 Bad Request):If no valid tests are found, the response will 
   "status": "error",
   "message": "No valid test result lines found in the input."
 }
+
+
+# Run ngrok parallely to app.py in another terminal 
+Run ngrok
